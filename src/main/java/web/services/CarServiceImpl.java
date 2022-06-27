@@ -10,7 +10,7 @@ import java.util.List;
 
 @Component
 public class CarServiceImpl implements CarService {
-    CarDao carDaoImpl = new CarDaoImpl();
+    private CarDao carDaoImpl = new CarDaoImpl();
 
     @Override
     public List<Car> showCars(int count) {
